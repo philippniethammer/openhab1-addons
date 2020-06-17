@@ -64,6 +64,7 @@ public enum EpsonProjectorCommandType {
     HREVERSE("HorizontalReverse", SwitchItem.class),
     VREVERSE("VerticalReverse", SwitchItem.class),
     BACKGROUND("Background", StringItem.class),
+    LOAD_MEM("LoadMemory", NumberItem.class),
     ERR_CODE("ErrCode", NumberItem.class),
     ERR_MESSAGE("ErrMessage", StringItem.class),;
 

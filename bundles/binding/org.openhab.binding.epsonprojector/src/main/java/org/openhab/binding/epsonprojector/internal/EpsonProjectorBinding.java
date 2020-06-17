@@ -520,6 +520,9 @@ public class EpsonProjectorBinding extends AbstractActiveBinding<EpsonProjectorB
                 case VREVERSE:
                     remoteController.setVerticalReverse((command == OnOffType.ON ? Switch.ON : Switch.OFF));
                     break;
+                case LOAD_MEM:
+                    remoteController.LoadMemory(((DecimalType) command).intValue());
+                    break;
                 default:
                     logger.warn("Unknown '{}' command!", commmandType);
                     break;
